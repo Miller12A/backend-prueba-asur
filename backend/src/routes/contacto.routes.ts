@@ -16,7 +16,7 @@ const router = Router();
 
 
 /** * @swagger
- * /contactos:
+ * /contacts:
  *   post:
  *     summary: Crear un nuevo contacto
  *     tags: [Contactos]
@@ -47,7 +47,7 @@ router.post("/create", ContactoController.crearContacto)
 
 /**
  * @swagger
- * /contactos/all:
+ * /contacts/all:
  *   get:
  *     summary: Obtiene todos los contactos
  *     tags: [Contactos]
@@ -59,7 +59,7 @@ router.get("/all", ContactoController.obtenerContactos)
 
 /**
  * @swagger
- * /contactos/buscar:
+ * /contactss/buscar:
  *   get:
  *     summary: Buscar contactos por q
  *     tags: [Contactos]
@@ -81,7 +81,7 @@ router.get("/buscar", ContactoController.buscarContactos);
 
 /**
  * @swagger
- * /contactos/{id}:
+ * /contacts/{id}:
  *   get:
  *     summary: Obtiene un contacto por ID
  *     tags: [Contactos]
@@ -106,7 +106,7 @@ router.get("/:id", ContactoController.obtenerContactoId);
 
 /**
  * @swagger
- * /contactos/update/{id}:
+ * /contacts/update/{id}:
  *   put:
  *     summary: Actualiza un contacto existente
  *     tags: [Contactos]
@@ -148,7 +148,7 @@ router.put("/update/:id", ContactoController.actualizarContacto);
 
 /**
  * @swagger
- * /contactos/{id}:
+ * /contacts/{id}:
  *   delete:
  *     summary: Elimina un contacto por ID
  *     tags: [Contactos]
